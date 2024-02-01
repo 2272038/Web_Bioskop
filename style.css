@@ -1,0 +1,90 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    header {
+        color: #fff;
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        background-color: #43766C;
+        height: 50px;
+    }
+    
+
+    h1 {
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #F8FAE5;
+        padding: 5px;
+    }
+
+    nav a {
+        color: #000;
+        text-decoration: none;  
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #B19470;
+        color: #fff;
+    }
+
+    .movie-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px;
+        /*  Flex item width required: 215px
+        Flex item margin 20px on each side: 215px + 20 + 20 = 255px
+        I needed 2(your item per row) so: 255px * 2.5
+        Then to (100% of parent-flex minus 255 * 3) / 2 padding on each side
+        So it stays in the center. */
+        padding: 20px calc((100% - (255px * 3)) / 2 );
+    }   
+
+    .movie {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .movie:hover{
+        box-shadow: 0 0 11px #445069;
+    }
+
+    .movie img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .Logo {
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .user-name {
+        margin-left: auto;
+        padding: 10px;
+        background-color: #43766C;
+        color: #fff;
+        border-radius: 5px;
+    }
+
